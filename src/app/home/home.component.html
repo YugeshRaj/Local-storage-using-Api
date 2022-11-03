@@ -1,0 +1,29 @@
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">API</th>
+        <th scope="col">Description</th>
+        <th scope="col">Auth</th>
+        <th scope="col">HTTPS</th>
+        <th scope="col">Cors</th>
+        <th scope="col">Link</th>
+        <th scope="col">Category</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users.entries;let sno=index;">
+        <td>{{sno+1}}</td>
+        <td >{{user.API}}</td>
+        <td>{{user.Description}}</td>
+        <td>{{user.Auth}}</td>
+        <td>{{user.HTTPS }}</td>
+        <td>{{user.Cors}}</td>
+        <td>{{user.Link}}</td>
+        <td>{{user.Category}}</td>
+        
+      </tr>
+     
+    </tbody>
+  </table>
